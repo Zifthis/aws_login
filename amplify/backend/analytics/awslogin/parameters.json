@@ -1,0 +1,21 @@
+{
+    "appName": "awslogin",
+    "roleName": "pinpointLambdaRole073e36a2",
+    "cloudformationPolicyName": "cloudformationPolicy073e36a2",
+    "cloudWatchPolicyName": "cloudWatchPolicy073e36a2",
+    "pinpointPolicyName": "pinpointPolicy073e36a2",
+    "authPolicyName": "pinpoint_amplify_073e36a2",
+    "unauthPolicyName": "pinpoint_amplify_073e36a2",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
